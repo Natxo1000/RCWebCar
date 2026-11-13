@@ -1,0 +1,5 @@
+# saltos de línea de Linux siempre (si no, bash falla en la Pi con $'')
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary

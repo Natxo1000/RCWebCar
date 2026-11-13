@@ -1,0 +1,14 @@
+[Unit]
+Description=Robot RC - servidor de control
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=TU_USUARIO
+WorkingDirectory=/home/TU_USUARIO/robot_rc
+ExecStart=/usr/bin/python3 /home/TU_USUARIO/robot_rc/server.py
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
